@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>My css Slider</title>
+  <style>
+  	*{
+  		margin: 0;
+  		padding: 0;
+  	}
+  	body{
+  		background-color: #234560;
+ 		font-size: 16px;
+ 		color: #333;
+  	}
+  	h1{
+  		font-size: 50px;
+  		font-weight: 700;
+  		letter-spacing: 2px;
+  		line-height: 1.5;
+  		text-align: center;
+  		margin-top: 50px;
+  		color: #fff;
+  	}
+  	.slide-wrap{
+  		width: 70%;
+  		height: 600px;
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		background-image: url('img/slid1.jpg');
+  		background-repeat: no-repeat;
+  		background-size: 100% 100%;
+  		box-shadow: 3px 3px 10px 10px white;
+  		border-radius: 5px;
+  		animation: slide 9s infinite linear;
+  	}
+  	@keyframes slide{
+  			0%{background-image: url('img/slid1.jpg');
+  		}
+  			35%{background-image: url('img/slid2.jpg');
+  		}
+  			75%{background-image: url('img/slid3.jpg');
+  		}
+  	}
+  </style>
+  </head>
+  <body>
+  	<h1>Our Nature</h1>
+  <div class="slide-wrap">
+    
+  </div>
+
+
+  </body>
+</html>
